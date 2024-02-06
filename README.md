@@ -26,6 +26,14 @@ To get started with this project, you'll need a Microsoft Azure account. Detaile
 - Use SSMS to create a new SQL Server database.
 - Configure the database based on your requirements.
 
+## Milestone 3: Migrate to Azure SQL Database
+
+### Task 1: Set up Azure SQL Database
+### Task 2: Prepare for Migration
+### Task 3: Connect to Azure SQL Database
+### Task 4: Schema Migration
+### Task 5: Data Migration
+
 ### Features
  1. Production Environment Database: Establish a production environment database that will be migrated to Azure SQL Database.
 
