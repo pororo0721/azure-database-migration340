@@ -29,11 +29,36 @@ To get started with this project, you'll need a Microsoft Azure account. Detaile
 ## Milestone 3: Migrate to Azure SQL Database
 
 ### Task 1: Set up Azure SQL Database
-By configuring SQL login authentication and firewall rules, you ensure secure access to the database while leveraging Azure's cloud infrastructure for enhanced scalability and reliability.
+- SQL Login Authentication
+- Configure Firewall Rules
+- Adavanced Firewall Configuration
+
 ### Task 2: Prepare for Migration
+- Launch Azure Data Studio
+- Connect to On-Premise Database
+- Configure Connection Details
+- Test Connection
+- Save Connection Profile
 ### Task 3: Connect to Azure SQL Database
+- Launch Azure Data Studio
+- Connect to Azure SQL Database
+- Perform Schema and Data Migration
+
 ### Task 4: Schema Migration
+- Install SQL Server Schema Compare Extension
+- Perform Schema Comparison
+- Review and Apply Schema Changes
+
 ### Task 5: Data Migration
+- Launch Azure Data Studio
+- Install Azure SQL Migration Extension
+- Perform Data Migration
+
+### Task 6: Validate Migration Success
+- Data Validation
+- Schema Validation
+- Configuration Validation
+- Performance Testing
 
 ## Milestone 4: Data Backup and Restore
 
@@ -58,13 +83,21 @@ By configuring SQL login authentication and firewall rules, you ensure secure ac
 
 3. Verify Upload: After the upload process completes, verify that the backup file is present in the Blob Storage container. You can confirm this by viewing the contents of the container through the storage explorer tool or Azure portal.
 ### Task 3: Restore Database on Development Environment
-Setting up a sandbox environment provides a safe and controlled space for software development and experimentation. By following the steps outlined in this guide, you can replicate the development setup, install SQL Server, and restore database backups to create an isolated environment for exploration and innovation.
+- Provision a New Windows VM
+- Install SQL Server
+- Restore Database Backup
+- Explore and Experiment
+
 ### Task 4: Automate Backups for Development Database
 
- With a weekly backup schedule in place, you ensure consistent protection for your evolving work and simplify recovery for your development environment if needed.
+- Launch SQL Server Management Studio (SSMS)
+- Create a New Maintenance Plan
+- Add Backup Database Task
+- Set Backup Schedule
+- Configure Maintenance Cleanup Task
 
 
-### Features
+## Features
  1. Production Environment Database: Establish a production environment database that will be migrated to Azure SQL Database.
 
 2. Data Backup and Restoration: Focus on crucial aspects like data backup and restoration, including automated scheduling.
