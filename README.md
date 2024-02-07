@@ -34,6 +34,35 @@ To get started with this project, you'll need a Microsoft Azure account. Detaile
 ### Task 4: Schema Migration
 ### Task 5: Data Migration
 
+## Milestone 4: Data Backup and Restore
+
+### Task 1: Backup the On-Premise Database
+1. Connect to SQL Server: Ensure you are connected to the SQL Server instance hosting the production database using SQL Server Management Studio (SSMS) or another preferred client tool.
+
+2. Launch Backup Wizard: Right-click on the database you wish to backup in the Object Explorer pane of SSMS. Select "Tasks" > "Back Up..." to launch the Backup Database Wizard.
+
+3. Select Backup Type: In the Backup Database Wizard, ensure that "Full" is selected as the backup type. This ensures a complete backup of the database.
+
+4. Specify Backup Destination: Choose the destination for the backup. You can either backup to disk, tape, or a backup device. For this procedure, we'll backup to disk.
+
+5. Define Backup Options: Specify the options for the backup, including backup set name, description, and whether to verify the backup when finished. Additionally, you can choose to perform a compression if desired.
+
+6. Execute Backup: Review the backup options and click "OK" to execute the backup operation. Monitor the progress in the Backup and Restore progress window.
+
+7. Verify Backup Completion: Once the backup process completes successfully, verify the backup file's location and ensure that it has been generated without errors.
+### Task 2: Upload Backup to Blob Storage
+1. Access Blob Storage Container: Use an Azure storage explorer tool, Azure CLI, or Azure portal to access the Blob Storage container created in the previous steps.
+
+2. Upload Backup File: Upload the previously created database backup file (.bak) to the Blob Storage container. You can drag and drop the file or use the upload functionality provided by the storage explorer tool or Azure portal.
+
+3. Verify Upload: After the upload process completes, verify that the backup file is present in the Blob Storage container. You can confirm this by viewing the contents of the container through the storage explorer tool or Azure portal.
+### Task 3: Restore Database on Development Environment
+Setting up a sandbox environment provides a safe and controlled space for software development and experimentation. By following the steps outlined in this guide, you can replicate the development setup, install SQL Server, and restore database backups to create an isolated environment for exploration and innovation.
+### Task 4: Automate Backups for Development Database
+
+By following the steps outlined in this guide, you can configure an automated backup solution for your development database using SQL Server Management Studio (SSMS). With a weekly backup schedule in place, you ensure consistent protection for your evolving work and simplify recovery for your development environment if needed.
+
+
 ### Features
  1. Production Environment Database: Establish a production environment database that will be migrated to Azure SQL Database.
 
