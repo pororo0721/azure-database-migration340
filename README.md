@@ -29,6 +29,7 @@ To get started with this project, you'll need a Microsoft Azure account. Detaile
 ## Milestone 3: Migrate to Azure SQL Database
 
 ### Task 1: Set up Azure SQL Database
+By configuring SQL login authentication and firewall rules, you ensure secure access to the database while leveraging Azure's cloud infrastructure for enhanced scalability and reliability.
 ### Task 2: Prepare for Migration
 ### Task 3: Connect to Azure SQL Database
 ### Task 4: Schema Migration
@@ -60,7 +61,7 @@ To get started with this project, you'll need a Microsoft Azure account. Detaile
 Setting up a sandbox environment provides a safe and controlled space for software development and experimentation. By following the steps outlined in this guide, you can replicate the development setup, install SQL Server, and restore database backups to create an isolated environment for exploration and innovation.
 ### Task 4: Automate Backups for Development Database
 
-By following the steps outlined in this guide, you can configure an automated backup solution for your development database using SQL Server Management Studio (SSMS). With a weekly backup schedule in place, you ensure consistent protection for your evolving work and simplify recovery for your development environment if needed.
+ With a weekly backup schedule in place, you ensure consistent protection for your evolving work and simplify recovery for your development environment if needed.
 
 
 ### Features
