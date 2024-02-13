@@ -76,12 +76,14 @@ To get started with this project, you'll need a Microsoft Azure account. Detaile
 6. Execute Backup: Review the backup options and click "OK" to execute the backup operation. Monitor the progress in the Backup and Restore progress window.
 
 7. Verify Backup Completion: Once the backup process completes successfully, verify the backup file's location and ensure that it has been generated without errors.
+
 ### Task 2: Upload Backup to Blob Storage
 1. Access Blob Storage Container: Use an Azure storage explorer tool, Azure CLI, or Azure portal to access the Blob Storage container created in the previous steps.
 
 2. Upload Backup File: Upload the previously created database backup file (.bak) to the Blob Storage container. You can drag and drop the file or use the upload functionality provided by the storage explorer tool or Azure portal.
 
 3. Verify Upload: After the upload process completes, verify that the backup file is present in the Blob Storage container. You can confirm this by viewing the contents of the container through the storage explorer tool or Azure portal.
+
 ### Task 3: Restore Database on Development Environment
 - Provision a New Windows VM
 - Install SQL Server
@@ -105,6 +107,17 @@ Steps to Simulate Data Loss:
 2. Document Data Removal Process
 3. Perform Data Removal
 4. Confirm Simulation Sucess
+
+### Task 2: Restore Database from Azure SQL Database Backup
+
+Steps to Restore Database from Backup
+
+1. Identify Backup
+2. Restore Database
+3. Validation of Restoration
+4. Update Production Environment
+5. Delete Affected Database
+
 
 
 
