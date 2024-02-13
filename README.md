@@ -110,7 +110,7 @@ Steps to Simulate Data Loss:
 
 ### Task 2: Restore Database from Azure SQL Database Backup
 
-Steps to Restore Database from Backup
+Steps to Restore Database from Backup:
 
 1. Identify Backup
 2. Restore Database
