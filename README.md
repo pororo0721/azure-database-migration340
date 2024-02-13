@@ -96,6 +96,18 @@ To get started with this project, you'll need a Microsoft Azure account. Detaile
 - Set Backup Schedule
 - Configure Maintenance Cleanup Task
 
+## Milestone 5: Disaster Recovery Simulation
+
+### Task 1: Mimic Data Loss in Production Environment
+
+Steps to Simulate Data Loss:
+1. Identify Critical Data
+2. Document Data Removal Process
+3. Perform Data Removal
+4. Confirm Simulation Sucess
+
+
+
 
 ## Features
  1. Production Environment Database: Establish a production environment database that will be migrated to Azure SQL Database.
