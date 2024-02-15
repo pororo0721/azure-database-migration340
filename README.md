@@ -118,9 +118,26 @@ Steps to Restore Database from Backup:
 4. Update Production Environment
 5. Delete Affected Database
 
+## Milestone 6: Geo Replication and Failover
+### Task 1: Set Up Geo-replication for Azure SQL Database
 
-
-
+Steps to Set Up Geo-replication
+1. Access Azure Portal
+2. Navigate to SQL Database : Select the appropriate subscription, resource group, and navigate to the SQL database you want to replicate.
+3. Enagle Geo-replication:
+- In the left-hand menu, under Settings, select Geo-Replication.
+- Click on Add secondary to begin setting up geo-replication.
+4. Choose Secondary Region:
+- Select the region where you want to create the secondary replica.
+5. Configure Replication Settings:
+- Choose the pricing tier and performance level for the secondary database. 
+- Set up failover priority and read-write mode for the secondary database.
+6. Review and Create:
+- Review the configuration settings to ensure they match your requirements.
+- Click on Review + create to initiate the geo-replication setup process.
+7. Monitor Replication Status:
+- Once the setup is complete, monitor the replication status in the Azure portal. Ensure that the secondary replica is synchronized with the primary database.
+- Regularly check the replication health to detect any issues or lag in synchronization.
 
 ## Features
  1. Production Environment Database: Establish a production environment database that will be migrated to Azure SQL Database.
