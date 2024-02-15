@@ -139,6 +139,32 @@ Steps to Set Up Geo-replication
 - Once the setup is complete, monitor the replication status in the Azure portal. Ensure that the secondary replica is synchronized with the primary database.
 - Regularly check the replication health to detect any issues or lag in synchronization.
 
+### Task 2: Test Failover and Failback
+
+Steps to Test Failover and Failback
+1. Plan Test Scenarios:
+- Define various failover scenarios to test, including planned failover, unplanned failover, and failback.
+- Consider the impact of each scenario on your application's availability and data consistency.
+
+2. Initiate Failover:
+- Navigate to the Azure Portal and locate your primary Azure SQL Database.
+- Depending on the scenario you want to test, initiate either a planned failover or an unplanned failover.
+- Follow the prompts to confirm the failover operation.
+
+3. Monitor Failover Process:
+- During the failover process, monitor the Azure portal and any monitoring tools you have in place to observe the database's behavior.
+- Verify that the secondary replica is promoted to the primary role successfully.
+- Ensure that there is minimal impact on application performance and data consistency.
+
+4. Test Application Connectivity:
+- Once failover is complete, test the connectivity of your application to the new primary database.
+- Verify that the application can read and write data to the database without issues.
+
+5. Evaluate Test Results:
+- Assess the success of the failover and failback tests based on predefined criteria.
+- Document any issues encountered and their resolutions.
+- Identify areas for improvement in your disaster recovery strategy.
+
 ## Features
  1. Production Environment Database: Establish a production environment database that will be migrated to Azure SQL Database.
 
