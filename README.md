@@ -165,6 +165,25 @@ Steps to Test Failover and Failback
 - Document any issues encountered and their resolutions.
 - Identify areas for improvement in your disaster recovery strategy.
 
+## Milsestone 7: Microsoft Entra Directory Integration
+### Task 1: Configure Microsoft Entra ID for Azure SQL Database
+Steps to Configure Microsoft Entra ID Authentication
+
+1. Enable Microsoft Entra ID Authenitcation:
+- Log in to the Azure portal
+- Navigate to your Azure SQL Server instance.
+- In the left-hand menu, under Security, select Active Directory admin.
+- Click on Set admin and choose Microsoft Entra ID as the authentication method.
+2. Designate a Microsoft Entra Admin
+- Determine the user account that will serve as the Microsoft Entra admin.
+- This admin should have the necessary permissions for managing users and access control within Azure SQL Database.
+3. Connect to Production Database Using Microsoft Entra Credentials
+- Open Azure Data Studio.
+- In the connection dialog, select Azure Active Directory - Universal with MFA as the authentication method.
+- Enter the Microsoft Entra credentials of the designated admin.
+- Provide the necessary connection details for your Azure SQL production database.
+- Test the connection to ensure successful authentication and access.
+
 ## Features
  1. Production Environment Database: Establish a production environment database that will be migrated to Azure SQL Database.
 
