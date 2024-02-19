@@ -184,6 +184,24 @@ Steps to Configure Microsoft Entra ID Authentication
 - Provide the necessary connection details for your Azure SQL production database.
 - Test the connection to ensure successful authentication and access.
 
+### Task 2: Create DB Reader User
+Steps to Create DB Reader User
+1. Access Azure SQL Server:
+- Log in to the Azure portal.
+- Navigate to your Azure SQL Server instance.
+2. Open Azure Data Studio
+- Launch Azure Data Studio or any preferred SQL client tool.
+3. Connect to the Database
+- Use your administrator credentials to connect to the Azure SQL Database.
+4. Execute SQL Script
+- Run the following SQL script to create the DB reader user:
+```
+USE [your_database_name];
+CREATE USER [reader_user] FROM EXTERNAL PROVIDER;
+ALTER ROLE db_datareader ADD MEMBER [reader_user];
+```
+- Replace [your_database_name] with the name of your database and [reader_user] with the desired username for the DB reader user.
+
 ## Features
  1. Production Environment Database: Establish a production environment database that will be migrated to Azure SQL Database.
 
